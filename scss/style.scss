@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "alfaSlabOne";
+    src: url("../AlfaSlabOne-Regular.ttf");
+}
+
+@import 'mixins';
+
+body {
+
+    font-family: "alfaSlabOne";
+    background-image: url(../fond.webp);
+
+    .clear {
+        clear: both;
+    }
+
+    .text-box {
+        background-color: red;
+        background-size: cover;
+        position: absolute;
+        color: white;
+        opacity: 0.7;
+
+
+    }
+
+
+
+    .text-box1 {
+        margin-top: 16.5rem;
+        width: 12rem;
+    }
+
+    .text-box2 {
+        width: 12rem;
+        margin-top: 13rem;
+    }
+
+    .text-box3 {
+        width: 12rem;
+        margin-top: 14rem;
+    }
+
+    h2,
+    h3,
+    button {
+        background-color: black;
+        color: white;
+    }
+}
+
+.container {
+    float: left;
+    display: flex;
+    text-align: center;
+
+    img {
+        float: left;
+    }
+
+    box {
+        align-items: flex-start;
+    }
+
+    .card {
+        background-image: url("../fond.webp");
+        box-shadow: 3px 4px 5px 6px #000;
+        margin: 0 1rem;
+
+        h3 {
+            margin: auto;
+            max-width: 90%;
+            width: 25rem;
+            height: 5rem;
+            text-align: center;
+            border-radius: 1rem;
+        }
+
+        button {
+            float: right;
+            border-radius: 1rem;
+            padding: 0.4rem;
+            font-family: "alphaSlabOne";
+
+            #triangle {
+                display: inline-block;
+                @include arrow(white, 0.5rem, down);
+            }
+
+        }
+
+    }
+
+}
+
+body>span {
+    background-color: black;
+    color: white;
+    float: right;
+
+}
+
+#logo {
+    img {
+        float: left;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;
+
+    }
+}

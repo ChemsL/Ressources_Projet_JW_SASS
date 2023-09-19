@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "alfaSlabOne";
+  src: url("../AlfaSlabOne-Regular.ttf");
+}
+body {
+  font-family: "alfaSlabOne";
+  background-image: url(../fond.webp);
+}
+body .clear {
+  clear: both;
+}
+body .text-box {
+  background-color: red;
+  background-size: cover;
+  position: absolute;
+  color: white;
+  opacity: 0.7;
+}
+body .text-box1 {
+  margin-top: 16.5rem;
+  width: 12rem;
+}
+body .text-box2 {
+  width: 12rem;
+  margin-top: 13rem;
+}
+body .text-box3 {
+  width: 12rem;
+  margin-top: 14rem;
+}
+body h2,
+body h3,
+body button {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  float: left;
+  display: flex;
+  text-align: center;
+}
+.container img {
+  float: left;
+}
+.container box {
+  align-items: flex-start;
+}
+.container .card {
+  background-image: url("../fond.webp");
+  box-shadow: 3px 4px 5px 6px #000;
+  margin: 0 1rem;
+}
+.container .card h3 {
+  margin: auto;
+  max-width: 90%;
+  width: 25rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.container .card button {
+  float: right;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  font-family: "alphaSlabOne";
+}
+.container .card button #triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid white;
+}
+
+body > span {
+  background-color: black;
+  color: white;
+  float: right;
+}
+
+#logo img {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */
