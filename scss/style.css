@@ -36,9 +36,10 @@ body button {
 }
 
 .container {
-  float: left;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
 .container img {
   float: left;
@@ -50,6 +51,7 @@ body button {
   background-image: url("../fond.webp");
   box-shadow: 3px 4px 5px 6px #000;
   margin: 0 1rem;
+  width: 23%;
 }
 .container .card h3 {
   margin: auto;
@@ -72,6 +74,11 @@ body button {
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
   border-top: 0.5rem solid white;
+}
+@media only screen and (max-width: 480px) {
+  .container .card {
+    width: 90%;
+  }
 }
 
 body > span {

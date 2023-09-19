@@ -50,9 +50,12 @@ body {
 }
 
 .container {
-    float: left;
+   
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
+
+    justify-content: center;
 
     img {
         float: left;
@@ -66,6 +69,8 @@ body {
         background-image: url("../fond.webp");
         box-shadow: 3px 4px 5px 6px #000;
         margin: 0 1rem;
+        width: 23%;
+
 
         h3 {
             margin: auto;
@@ -91,7 +96,15 @@ body {
 
     }
 
-}
+    @media only screen and (max-width: 480px) {
+        .card {
+            width: 90%;
+        }
+    }
+        
+    }
+
+
 
 body>span {
     background-color: black;
